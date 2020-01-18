@@ -1,0 +1,355 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (中国) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\CampusNavigation.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\CampusNavigation.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 CampusNavigation"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "CampusNavigation 1.0 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2017",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_CAMPUSNAVIGATION_DIALOG DIALOGEX 0, 0, 811, 512
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "CampusNavigation"
+FONT 9, "宋体"
+BEGIN
+    CTEXT           "推荐路线",IDC_STATIC,7,419,101,22,SS_CENTERIMAGE
+    PUSHBUTTON      "最短路线查询",IDC_BUTTON1,248,379,98,28
+    PUSHBUTTON      "不重复路线查询",IDC_BUTTON2,474,379,97,28
+    CTEXT           "查询结果",IDC_STATIC,7,260,49,26,SS_CENTERIMAGE
+    CONTROL         130,IDC_Map,"Static",SS_BITMAP,248,70,315,200
+    LISTBOX         IDC_LIST1,7,441,791,60,LBS_SORT | LBS_NOINTEGRALHEIGHT | 
+                    LBS_DISABLENOSCROLL | LBS_NOSEL | WS_VSCROLL | 
+                    WS_HSCROLL | WS_TABSTOP
+    LISTBOX         IDC_LIST2,7,286,797,60,LBS_MULTIPLESEL | 
+                    LBS_NOINTEGRALHEIGHT | WS_DISABLED | WS_HSCROLL | 
+                    WS_TABSTOP,WS_EX_CLIENTEDGE
+    LTEXT           "使用说明",IDC_STATIC,7,1,39,14
+    LTEXT           "1.点击地图上的任意两个地点之后再按查询即可查询路线。",
+                    IDC_STATIC,7,15,219,14
+    LTEXT           "4.最短路线查询：查询起点和终点之间的最短路线。若无查询结果则两景点间不连通。",
+                    IDC_STATIC,7,58,306,13
+    LTEXT           "2.推荐路线为从正门出发将全景点游览一遍再返回正门的路线。",
+                    IDC_STATIC,7,29,241,14
+    LTEXT           "3.不重复路线查询：不重复路线查询功能为查询从起点到终点不重复游览所有景点的路线，若无查询结果则表示没有路线可以不重复经过所有景点并连接连接起点终点。",
+                    IDC_STATIC,7,43,592,14
+    COMBOBOX        IDC_COMBOleft,248,345,102,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBOright,473,347,102,64,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "CampusNavigation Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "CampusNavigation\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2017\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "CampusNavigation.EXE\0"
+            VALUE "ProductName", "CampusNavigation 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_CAMPUSNAVIGATION_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 804
+        VERTGUIDE, 108
+        VERTGUIDE, 135
+        VERTGUIDE, 248
+        VERTGUIDE, 322
+        VERTGUIDE, 358
+        VERTGUIDE, 460
+        VERTGUIDE, 473
+        VERTGUIDE, 571
+        VERTGUIDE, 590
+        VERTGUIDE, 687
+        VERTGUIDE, 702
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 501
+        HORZGUIDE, 15
+        HORZGUIDE, 29
+        HORZGUIDE, 43
+        HORZGUIDE, 57
+        HORZGUIDE, 70
+        HORZGUIDE, 114
+        HORZGUIDE, 258
+        HORZGUIDE, 286
+        HORZGUIDE, 327
+        HORZGUIDE, 379
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP1             BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\ID2666.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_CAMPUSNAVIGATION_DIALOG DLGINIT
+BEGIN
+    IDC_COMBOleft, 0x403, 5, 0
+0xfdd5, 0xc5c3, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xd0d0, 0xfed5, 0xa5c2, "\000" 
+    IDC_COMBOleft, 0x403, 5, 0
+0xe3b9, 0xa1b3, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xb5ca, 0xe9d1, 0xa5c2, "\000" 
+    IDC_COMBOleft, 0x403, 9, 0
+0xc5d0, 0xa2cf, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xbccd, 0xe9ca, 0xddb9, "\000" 
+    IDC_COMBOleft, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0041, 
+    IDC_COMBOleft, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0042, 
+    IDC_COMBOleft, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0043, 
+    IDC_COMBOleft, 0x403, 7, 0
+0xcbd4, 0xafb6, 0xa1b3, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xe5cc, 0xfdd3, 0xddb9, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xbac0, 0xf2c7, 0xa1b3, "\000" 
+    IDC_COMBOleft, 0x403, 5, 0
+0xcdb2, 0xfccc, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xccc9, 0xb5d2, 0xd6bd, "\000" 
+    IDC_COMBOleft, 0x403, 10, 0
+0xa7d1, 0xfac9, 0xdecb, 0xe1c9, 0x0031, 
+    IDC_COMBOleft, 0x403, 10, 0
+0xa7d1, 0xfac9, 0xdecb, 0xe1c9, 0x0032, 
+    IDC_COMBOleft, 0x403, 7, 0
+0x3532, 0xc5ba, 0xa5c2, "\000" 
+    IDC_COMBOleft, 0x403, 9, 0
+0xccbd, 0xa6ca, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBOleft, 0x403, 13, 0
+0xa7d1, 0xfac9, 0xeebb, 0xafb6, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOleft, 0x403, 9, 0
+0xd0d5, 0xfdb4, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOleft, 0x403, 5, 0
+0xf3ba, 0xc5c3, "\000" 
+    IDC_COMBOleft, 0x403, 7, 0
+0xa3cd, 0xb5b3, 0xa1b3, "\000" 
+    IDC_COMBOright, 0x403, 5, 0
+0xfdd5, 0xc5c3, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xd0d0, 0xfed5, 0xa5c2, "\000" 
+    IDC_COMBOright, 0x403, 5, 0
+0xe3b9, 0xa1b3, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xb5ca, 0xe9d1, 0xa5c2, "\000" 
+    IDC_COMBOright, 0x403, 9, 0
+0xc5d0, 0xa2cf, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xbccd, 0xe9ca, 0xddb9, "\000" 
+    IDC_COMBOright, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0041, 
+    IDC_COMBOright, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0042, 
+    IDC_COMBOright, 0x403, 8, 0
+0xccbd, 0xa7d1, 0xa5c2, 0x0043, 
+    IDC_COMBOright, 0x403, 7, 0
+0xcbd4, 0xafb6, 0xa1b3, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xe5cc, 0xfdd3, 0xddb9, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xbac0, 0xf2c7, 0xa1b3, "\000" 
+    IDC_COMBOright, 0x403, 5, 0
+0xcdb2, 0xfccc, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xccc9, 0xb5d2, 0xd6bd, "\000" 
+    IDC_COMBOright, 0x403, 10, 0
+0xa7d1, 0xfac9, 0xdecb, 0xe1c9, 0x0031, 
+    IDC_COMBOright, 0x403, 10, 0
+0xa7d1, 0xfac9, 0xdecb, 0xe1c9, 0x0032, 
+    IDC_COMBOright, 0x403, 7, 0
+0x3532, 0xc5ba, 0xa5c2, "\000" 
+    IDC_COMBOright, 0x403, 9, 0
+0xccbd, 0xa6ca, 0xabb9, 0xa2d4, "\000" 
+    IDC_COMBOright, 0x403, 13, 0
+0xa7d1, 0xfac9, 0xeebb, 0xafb6, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOright, 0x403, 9, 0
+0xd0d5, 0xfdb4, 0xd0d6, 0xc4d0, "\000" 
+    IDC_COMBOright, 0x403, 5, 0
+0xf3ba, 0xc5c3, "\000" 
+    IDC_COMBOright, 0x403, 7, 0
+0xa3cd, 0xb5b3, 0xa1b3, "\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 CampusNavigation(&A)..."
+END
+
+#endif    // Chinese (中国) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\CampusNavigation.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
